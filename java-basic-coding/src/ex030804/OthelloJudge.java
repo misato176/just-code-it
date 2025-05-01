@@ -103,3 +103,4 @@ public class OthelloJudge {
     // };
 
 }
+//キャメル係数を意識すること
