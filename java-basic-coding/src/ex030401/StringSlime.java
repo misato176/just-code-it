@@ -2,12 +2,12 @@ package ex030401;
 
 public class StringSlime {
     public static void main(String[] args) {
-        String a = "ぼく";//←箱としてaではなくstr1,2等の表記をしていた。そのほうがわかりやすそう
-        String b = "悪い";
-        String c = "スライム";
-        String d = "じゃないよ";
+        String str1 = "ぼく";
+        String str2 = "悪い";
+        String str3 = "スライム";
+        String str4 = "じゃないよ";
 
-        System.out.println( a + b + c + d);
+        System.out.println( str1 + str2 + str3 + str4);
 
     }
 }

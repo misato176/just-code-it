@@ -20,13 +20,13 @@ package ex030804;
 //         //配列の中に値があるか、その値が白丸か黒丸かを判定する？
 //         for(String [] x : othello ){            //ocello配列のある行についてその行の要素分だけ下記の処理を繰り返す
 //             if ( x != "" ){                    //空の要素にはif文でチェックする　if (names[i] != "")
-//                 for ( String Circle : x ){
+//                 for ( String circle : x ){
 
-//                     if( Circle == "○" ){         //白丸だった場合はこちらでカウント
+//                     if( circle == "○" ){         //白丸だった場合はこちらでカウント
 //                         white += 1;
 
 //                     }
-//                     if( Circle == "●" ){                       //黒丸だった場合はこちらでカウント
+//                     if( circle == "●" ){                       //黒丸だった場合はこちらでカウント
 //                         black += 1;
 //                     }
 
@@ -74,10 +74,10 @@ public class OthelloJudge {
 
         // 判定
         for (String[] x : othello) { // ocello配列のある行についてその行の要素分だけ下記の処理を繰り返す
-            for (String Circle : x) {
-                if ("○".equals(Circle)) { // 白丸だった場合はこちらでカウント
+            for (String circle : x) {
+                if ("○".equals(circle)) { // 白丸だった場合はこちらでカウント
                     white += 1;
-                } else if ("●".equals(Circle)) { // 黒丸だった場合はこちらでカウント
+                } else if ("●".equals(circle)) { // 黒丸だった場合はこちらでカウント
                     black += 1;
                 }
             }
