@@ -13,25 +13,25 @@ public class InvestmentComparison {
         int year = 10;            //運用年数
 
         //複利運用 
-        BigDecimal result = base;
+        BigDecimal management = base;
         //貯金
-        BigDecimal result2 = base;  //名前はもう少し工夫するべき
+        BigDecimal saving = base;  //名前はもう少し工夫するべき
 
     
 
         for(int i = 1; i <= year; i++){
 
-            result = result.add(stack).multiply(profitcalc);
-            result = result.setScale(0, RoundingMode.HALF_UP);
+            management = management.add(stack).multiply(profitcalc);
+            management = management.setScale(0, RoundingMode.HALF_UP);
             
-            result2 =  result2.add(stack);
+            saving =  saving.add(stack);
 
 
             DecimalFormat df = new DecimalFormat(",###,###円");
-            String formatted = df.format(result);//出力フォーマット
+            String formatted = df.format(management);//出力フォーマット
 
             DecimalFormat df2 = new DecimalFormat(",###,###円");
-            String formatted2 = df2.format(result2);//出力フォーマット
+            String formatted2 = df2.format(saving);//出力フォーマット
             
             System.out.printf("%15s %15s %15s%n", i + "年目", formatted2  , formatted );
             //カンマ区切りはprintfでできる。
