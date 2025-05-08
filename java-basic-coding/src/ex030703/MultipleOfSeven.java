@@ -4,7 +4,7 @@ public class MultipleOfSeven {
     public static void main(String[] args) {
        
         for( int i = 0; i <= 100; i++){
-            if (i % 7 == 0 && i > 0) {
+            if (i % 7 == 0 && i > 0) {//右編いらないかも
                 System.out.println(i);
             }
             

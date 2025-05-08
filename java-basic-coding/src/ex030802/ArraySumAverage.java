@@ -16,6 +16,7 @@ public class ArraySumAverage {
         BigDecimal Avg = sum.divide ( new BigDecimal( scores.length )); //scoreの要素すべての平均(Avg)を求める式を記載　Bigdecimal
 
         Avg = Avg.setScale(3, RoundingMode.HALF_UP);//割り切れない数字となるため、小数点台3位までを残して四捨五入をする丸め処理を実施
+        //キャメル係数を意識するように
 
         System.out.printf("%15s %15s%n", "合計：" + sum , "平均" + Avg);
 

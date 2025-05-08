@@ -7,7 +7,7 @@ public class CompareString {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter your name");
         String name = scanner.nextLine();
-        if ( name .equals("Alice") ) {
+        if ( name .equals("Alice") ) {//Aliceを左にnameを右に　エラーが出にくい
             System.out.println("Hello,Alice!");
             
         }else { 

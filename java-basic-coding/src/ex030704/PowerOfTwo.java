@@ -13,7 +13,7 @@ public class PowerOfTwo {
             };
             System.out.println(ans);
 
-        } 
+        } //ループ数に上限は設けないようにする。
     }
        
 }//繰り返しの条件付けの方法をいくつか考えてみるのがいいかも

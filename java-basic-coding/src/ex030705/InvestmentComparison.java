@@ -15,7 +15,7 @@ public class InvestmentComparison {
         //複利運用 
         BigDecimal result = base;
         //貯金
-        BigDecimal result2 = base;
+        BigDecimal result2 = base;  //名前はもう少し工夫するべき
 
     
 
@@ -34,7 +34,7 @@ public class InvestmentComparison {
             String formatted2 = df2.format(result2);//出力フォーマット
             
             System.out.printf("%15s %15s %15s%n", i + "年目", formatted2  , formatted );
-            
+            //カンマ区切りはprintfでできる。
         }
 
     }
