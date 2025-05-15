@@ -1,29 +1,21 @@
 package ex0311;
 
-import java.util.Scanner;
-
 public class ArrayAccess {
+
     public static void main(String[] args) {
-        System.out.print("数値を入力してください");
 
-        try{
-        Scanner scanner = new Scanner(System.in);//Scannerを用意
-        int num = scanner.nextInt();//入力された文字列を取得
-
+        int[] number = { 2, 4, 4, 5 };
         
+        try {
 
+            System.out.println(number[number.length+1]);
 
+        } catch (ArrayIndexOutOfBoundsException e) {
 
-
-    }catch(Exception e ){//例外に対してエラーメッセージを表示する
-        System.out.print("数値以外が入力されました。");
+            System.out.printf(number.length+1 + "番目の要素は存在しません。"); // TODO: handle exception
+            // System.out.println(e);
+        }
 
     }
 
-
-    
-        
-    }
-    
-    
 }

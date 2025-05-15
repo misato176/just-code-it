@@ -3,7 +3,7 @@ package ex030704;
 public class PowerOfTwo {
 
     public static final int digit_limit(10); 
-    
+
     public static void main(String[] args) {
         // int a = 2; 
         // int n = 10000; 
@@ -18,24 +18,17 @@ public class PowerOfTwo {
 
         // } //ループ数に上限は設けないようにする。
 
-        // int result = 2;
-
-        // while ( result < 1_000_000_000) {
-        //     System.out.println( result );
-        //     result *= 2;
-
-        // }//上限を1_000_000_000になる前と固定した場合。
-
-
-
         int result = 2;
 
         while ( result < 1_000_000_000) {
             System.out.println( result );
             result *= 2;
 
-        }//上限を10をDIGIT_LIMIT（10）の分だけべき乗した数になる前と固定した場合。
+        }//上限を1_000_000_000になる前と固定した場合。
 
+
+
+        
     }
        
 }//繰り返しの条件付けの方法をいくつか考えてみるのがいいかも
